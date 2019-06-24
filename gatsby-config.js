@@ -1,3 +1,9 @@
+require('dotenv').config();
+
+const path = require("path");
+const TOKEN = process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN;
+const HOST = process.env.GATSBY_CONTENTFUL_HOST;
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -5,6 +11,14 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `l3vsvnjq3ag0`,
+        accessToken: TOKEN,
+        host: HOST
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
