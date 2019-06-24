@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
+import Meta from "../components/meta"
 
 class HomePage extends React.Component {
   render() {
     const { ...data } = this.props.data.contentfulHome;
     return (<Layout>
-      <SEO title="Home" />
+      <Meta title={data.title} />
       <h1>{data.title}</h1>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />

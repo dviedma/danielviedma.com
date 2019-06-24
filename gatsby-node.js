@@ -18,7 +18,6 @@ exports.createPages = async ({graphql, actions}) => {
       allContentfulProject {
         nodes {
           slug
-          title
         }
       }
     }

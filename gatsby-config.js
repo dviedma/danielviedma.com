@@ -6,9 +6,9 @@ const HOST = process.env.GATSBY_CONTENTFUL_HOST;
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Firstborn Boilerplate Project`,
+    description: `Kick off your next, great Firstborn project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `Firstborn Tech`,
   },
   plugins: [
     {
