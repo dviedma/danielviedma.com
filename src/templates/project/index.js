@@ -1,5 +1,7 @@
 import React from "react";
 
+import Layout from "@layouts/layout"
+
 class ProjectTemplate extends React.Component {
 
   // Render
@@ -7,7 +9,7 @@ class ProjectTemplate extends React.Component {
     // Alias data to props
     const { ...data } = { ...this.props.data.contentfulProject };
 
-    return <h1>{data.title}</h1>;
+    return (<Layout><h1>{data.title}</h1></Layout>);
   }
 }
 
