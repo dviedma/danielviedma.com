@@ -7,11 +7,13 @@ import Meta from "@components/meta"
 
 class HomePage extends React.Component {
   render() {
-    const { ...data } = this.props.data.contentfulHome;
-    return (<Layout>
-      <Meta title={data.title} />
-      <h1>{data.title}</h1>
-    </Layout>);
+    const { ...data } = this.props.data.contentfulHome
+    return (
+      <Layout>
+        <Meta title={data.title} />
+        <h1>{data.title}</h1>
+      </Layout>
+    )
   }
 }
 
@@ -23,4 +25,4 @@ export const pageQuery = graphql`
       title
     }
   }
-`;
+`
