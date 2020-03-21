@@ -11,7 +11,7 @@ class HomePage extends React.Component {
     return (
       <Layout>
         <Meta title={data.title} />
-        <h1>{data.title}</h1>
+        <h1 className="test">{data.title}</h1>
       </Layout>
     )
   }
