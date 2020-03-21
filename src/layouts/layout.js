@@ -15,7 +15,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header siteTitle="Firstborn Boilerplate Project" />
+      <Header siteTitle="Daniel Viedma Boilerplate Project" />
       <main>{children}</main>
     </>
   )
