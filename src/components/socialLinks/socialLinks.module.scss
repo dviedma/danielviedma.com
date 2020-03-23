@@ -1,0 +1,19 @@
+.socialLinks {
+  margin-top: 3em;
+  background: #d7f2e2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  li {
+    list-style: none;
+    margin-top: 5px;
+    &:before {
+      content: "\00BB \0020";
+      padding-right: 10px;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}

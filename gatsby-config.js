@@ -6,9 +6,9 @@ const HOST = process.env.GATSBY_CONTENTFUL_HOST
 
 module.exports = {
   siteMetadata: {
-    title: `Daniel Viedma Boilerplate Project`,
-    description: `Kick off your next, great Daniel Viedma project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `Daniel Viedma Tech`,
+    title: `Hello, I am Daniel Viedma`,
+    description: `Personal page with a brief descrition of myself, some recent projects and some social media links`,
+    author: `Daniel Viedma`,
   },
   plugins: [
     {

@@ -2,3 +2,33 @@
 @import "./vars";
 @import "./mixins";
 @import "./typography";
+
+body {
+  //margin: 2em;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 2em;
+}
+
+main > .wrapper {
+  //min-height: 850px;
+  margin-bottom: 200px;
+}
+
+.projects {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+    &:before {
+      content: "∕";
+      padding-right: 10px;
+    }
+    p {
+      margin-left: 20px;
+      margin-top: 4px;
+    }
+  }
+}

@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import favicon from "@static/images/favicon-16x16.png"
+import bgImg from "@static/images/smith.jpg"
 
 function Meta({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -32,8 +34,9 @@ function Meta({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={site.siteMetadata.title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[{ rel: "icon", type: "image/png", sizes: "16x16", href: favicon }]}
       meta={[
         {
           name: `description`,
@@ -52,6 +55,10 @@ function Meta({ description, lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: bgImg,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -66,6 +73,10 @@ function Meta({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: bgImg,
         },
       ].concat(meta)}
     />
