@@ -7,7 +7,7 @@ const HOST = process.env.GATSBY_CONTENTFUL_HOST
 module.exports = {
   siteMetadata: {
     title: `Hello, I am Daniel Viedma`,
-    description: `Personal page with a brief descrition of myself, some recent projects and some social media links`,
+    description: `Barcelona native Technical Director living in NYC 🗽.`,
     author: `Daniel Viedma`,
   },
   plugins: [
