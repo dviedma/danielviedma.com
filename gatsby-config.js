@@ -19,6 +19,8 @@ module.exports = {
         host: HOST,
       },
     },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

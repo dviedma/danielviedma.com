@@ -9,13 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../components/header"
-import "./layout.css"
+// Styles
+import "./styles/index.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header siteTitle="Daniel Viedma Boilerplate Project" />
       <main>{children}</main>
     </>
   )
