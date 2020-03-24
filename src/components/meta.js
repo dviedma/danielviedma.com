@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import favicon from "@static/images/favicon-16x16.png"
+import favicon from "@static/images/favicon.png"
 import bgImg from "@static/images/smith.jpg"
 
 function Meta({ description, lang, meta, title }) {
