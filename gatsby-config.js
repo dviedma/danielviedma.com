@@ -47,8 +47,17 @@ module.exports = {
         start_url: `/`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_ID,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // (Optional) Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics.
+        anonymize: true,
+        // (Optional)  Google Analytics will not be loaded at all for visitors that have “Do Not Track” enabled.
+        respectDNT: true,
+      },
+    },
   ],
 }
