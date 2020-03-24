@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import favicon from "@static/images/favicon.png"
-import bgImg from "@static/images/smith.jpg"
+import bgImg from "@static/images/smith2.jpg"
 
 function Meta({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
