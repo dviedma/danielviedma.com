@@ -19,18 +19,6 @@ class HomePage extends React.Component {
               __html: data.contentfulHome.description.childMarkdownRemark.html,
             }}
           ></h2>
-          <ul className="projects">
-            {data.allContentfulProject.nodes.map((project, index) => {
-              return (
-                <li key={index}>
-                  <a href={project.url} target="_blank">
-                    {project.url}
-                  </a>
-                  <p>{project.shortDescription}</p>
-                </li>
-              )
-            })}
-          </ul>
         </div>
         <SocialLinks links={data.allContentfulSocialMediaLink.nodes} />
       </Layout>
@@ -48,13 +36,6 @@ export const pageQuery = graphql`
         childMarkdownRemark {
           html
         }
-      }
-    }
-    allContentfulProject {
-      nodes {
-        url
-        title
-        shortDescription
       }
     }
     allContentfulSocialMediaLink {
