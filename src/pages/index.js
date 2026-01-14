@@ -5,12 +5,13 @@ import Meta from "@components/meta"
 import SocialLinks from "../components/socialLinks"
 
 class HomePage extends React.Component {
+  componentDidMount() {
+    // This only runs in the browser
+    window.location.href = "https://www.linkedin.com/in/daniel-viedma/"
+  }
+
   render() {
     const { ...data } = this.props.data
-
-    //console.log("data", data)
-    window.location.href = "https://www.linkedin.com/in/daniel-viedma/"
-
     return (
       <></>
       /*
