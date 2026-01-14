@@ -8,8 +8,12 @@ class HomePage extends React.Component {
   render() {
     const { ...data } = this.props.data
 
-    console.log("data", data)
+    //console.log("data", data)
+    window.location.href = "https://www.linkedin.com/in/daniel-viedma/"
+
     return (
+      <></>
+      /*
       <Layout>
         <Meta title={data.contentfulHome.title} />
         <div className="wrapper">
@@ -22,6 +26,7 @@ class HomePage extends React.Component {
         </div>
         <SocialLinks links={data.allContentfulSocialMediaLink.nodes} />
       </Layout>
+      */
     )
   }
 }
